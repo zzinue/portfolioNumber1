@@ -6,7 +6,6 @@ body {
 section {
     height: 500px;
     background-color: white;
-    border: solid black 1px;
 }
 
 .hero {
@@ -17,8 +16,10 @@ section {
 }
 
 footer {
-    height: 500px;
     background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
 }
 
 nav {
@@ -32,6 +33,10 @@ ul {
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
+}
+
+ul.show {
+    display: block;
 }
 
 li {
@@ -51,6 +56,11 @@ h2 {
 p {
     margin: 0;
     font-size: 30px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -105,6 +115,13 @@ p {
     padding: 80px;
 }
 
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
 .headshot {
     width: 360px;
     border-radius: 180px;
@@ -116,11 +133,77 @@ p {
 }
 
 .project-card {
-    width: 200px;
+    width: 300px;
     height: 500px;
     border: 1px solid black;
+    box-shadow: 5px 5px 20px rgb(215, 211, 211);
+    margin: 10px;
 }
 
 .project-container {
     display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    ul {
+        display: none;
+        background-color: #333546;
+        margin: 0;
+    }
+    nav {
+        align-items: flex-start;
+    }
+    ul.show {
+        display: block;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #333546;
+    }
+    .logo {
+        display: none;
+    }
 }

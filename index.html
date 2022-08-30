@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85d24bde78.js" crossorigin="anonymous"></script>
     <title>Portfolio Victor</title>
 </head>
 
@@ -15,17 +16,21 @@
     <section class="hero">
         <nav>
             <img class="logo" src="src/images/Z Logo - Original - 5000x5000.png" alt="victor logo">
-            <ul>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Contact</li>
+            <ul id="nav-list">
+                <li>
+                    <a href="#about-me"> About me</a></li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#contact-me">Contact</a> </li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Victor Guerrero</h1>
                 <p>Full-Stack Developer</p>
-                <div class="button">About me</div>
+                <div class="button"><a href="#about-me">About me</a></div>
             </div>
             <div class="socials">
                 <div>
@@ -42,7 +47,7 @@
             </div>
         </div>
     </section>
-    <section class="sub-section">
+    <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About me</h2>
             <p>Hello. My name is Victor Guerrero. I'm an enthusiast software developer eager to build some amazing things</p>
@@ -51,17 +56,44 @@
             <img class="headshot" src="src/images/igualaGRo.jpg" alt="victor headshot">
         </div>
     </section>
-    <section>
+    <section class="sub-section-alternative" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
-            <div class="project-card"></div>
-            <div class="project-card"></div>
-            <div class="project-card"></div>
-            <div class="project-card"></div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/bankmodern.png" alt="Project one">
+                <h3>Project One</h3>
+                <p class="subtext">Thiw is my project and some text about it. I enjoyed making this project. </p>
+                <hr>
+                <p class="subtext"><a class="project-link" href="https://bank-modern-app.vercel.app/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/becomeawebdeveloper.png" alt="Project one">
+                <h3>Project Two</h3>
+                <p class="subtext">Thiw is my project and some text about it. I enjoyed making this project. </p>
+                <hr>
+                <p class="subtext"><a class="project-link" href="https://boostrap-bootcamp-page.vercel.app/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/departmentapp.png" alt="Project one">
+                <h3>Project Three</h3>
+                <p class="subtext">Thiw is my project and some text about it. I enjoyed making this project. </p>
+                <hr>
+                <p class="subtext"><a class="project-link" href="https://cotoappfront.vercel.app/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/ecommercesanity.png" alt="Project one">
+                <h3>Project four</h3>
+                <p class="subtext">Thiw is my project and some text about it. I enjoyed making this project. </p>
+                <hr>
+                <p class="subtext"><a class="project-link" href="https://ecommerce-sanity-stripe-teal-nine.vercel.app/">View here</a></p>
+            </div>
 
         </div>
     </section>
-    <footer></footer>
+    <footer id="contact-me">
+        <h2>Contact me</h2>
+        <p>zzinue@gmail.com</p>
+    </footer>
 
     <script src="src/app.js"></script>
 </body>
